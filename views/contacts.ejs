@@ -1,0 +1,17 @@
+<%- include('partials/head.ejs') %>
+
+  <h1>Contacts</h1>
+
+  <ul class="ul">
+    <% if (contacts.length) { %>
+    <% contacts.forEach(({ name, link }) => { %>
+      <li class="li">
+        <a href="<%= link %>" target="blanc"><%= name %></a>
+      </li>
+    <% }) %>
+
+    <% } %>
+  </ul>
+  
+</body>
+</html>

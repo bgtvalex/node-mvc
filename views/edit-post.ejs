@@ -1,0 +1,23 @@
+<%- include('partials/head.ejs') %>
+
+  <h1>edit</h1>
+
+  <form id="post-form" class="form" method="post" action="/edit/<%= post.id %>?_method=PUT">
+    <div class="form-info">
+      <label class="label label-info">Post title<br>
+        <input type="text" name="title" class="input input-info" value="<%= post.title %>">
+      </label>
+      <label class="label label-info">Author<br>
+        <input type="text" name="author" class="input input-info" value="<%= post.author %>">
+      </label>
+    </div>
+    <div class="form-text">
+      <label class="label textarea-label">Post Text<br>
+        <textarea type="text" name="text" class="input textarea"><%= post.text %></textarea>
+      </label>
+    </div>
+    <button class="btn">Print</button>
+  </form>
+  
+</body>
+</html>

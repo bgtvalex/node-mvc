@@ -1,0 +1,23 @@
+<%- include('partials/head.ejs') %>
+
+  <h1>add post</h1>
+
+  <form id="post-form" class="form" method="post" action="add-post">
+    <div class="form-info">
+      <label class="label label-info">Post title<br>
+        <input type="text" name="title" class="input input-info">
+      </label>
+      <label class="label label-info">Author<br>
+        <input type="text" name="author" class="input input-info">
+      </label>
+    </div>
+    <div class="form-text">
+      <label class="label textarea-label">Post Text<br>
+        <textarea type="text" name="text" class="input textarea"></textarea>
+      </label>
+    </div>
+    <button class="btn">Print</button>
+  </form>
+  
+</body>
+</html>
